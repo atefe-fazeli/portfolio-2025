@@ -1,5 +1,7 @@
-export interface BaseComponentProps {
+export type BaseComponentProps = {
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   disabled?: boolean;
-}
+  id?: string;
+  'data-testid'?: string;
+};
