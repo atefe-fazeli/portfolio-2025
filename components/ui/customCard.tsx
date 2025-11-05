@@ -1,5 +1,6 @@
-import Image from 'next/image';
-import { ProjectCardProps } from '@/types/customCard';
+import Image from "next/image";
+import { ProjectCardProps } from "@/types/customCard";
+
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
@@ -10,50 +11,38 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   detailsLink,
   imageAlt = title,
 }) => {
-  const isImageLeft = imagePosition === 'left';
+  const isImageLeft = imagePosition === "left";
 
   return (
-    <div className={`
-      flex flex-col lg:flex-row items-center my-10 relative
-      ${isImageLeft ? 'lg:flex-row-reverse' : ''}
-    `}>
-      {/* Image Section */}
-      <div className={`
-        w-full lg:w-1/2 relative z-10
-        ${isImageLeft 
-          ? 'lg:border-t lg:border-r border-green-400' 
-          : 'lg:border-t lg:border-l border-green-400'
-        }
-      `}>
-        <Image
-          src={imageUrl}
-          alt={imageAlt}
-          width={600}
-          height={400}
-          className="w-full h-64 lg:h-80 object-cover"
-          priority={false}
-        />
-      </div>
-
+    <div
+      className={`
+      flex flex-col  lg:flex-row items-center  relative
+      ${isImageLeft ? "lg:flex-row-reverse" : ""}
+    `}
+    >
       {/* Content Section */}
-      <div className={`
+      <div
+        className={`
         w-full lg:w-1/2 relative z-20 mt-6 lg:mt-0
-        ${isImageLeft 
-          ? 'lg:-ml-5 text-left' 
-          : 'lg:-mr-5 text-right'
-        }
-      `}>
-        <div className="bg-slate-800 p-6 rounded-lg shadow-lg">
-          <span className="text-green-400 font-mono text-sm">
-            {projectType}
-          </span>
-          <h3 className="text-slate-100 text-xl font-semibold mt-2 mb-4">
-            {title}
-          </h3>
-          <div className="bg-slate-700/80 p-4 rounded mb-4">
-            <p className="text-slate-300 leading-relaxed">
-              {description}
+        ${isImageLeft ? "lg:-ml-5 text-left" : "lg:-mr-5 text-right"}
+      `}
+      >
+        <div
+          className={`h-64 lg:h-80 flex flex-col justify-between ${
+            isImageLeft ? "items-end" : "items-start"
+          }`}
+        >
+          <div className="flex flex-col items-start">
+            <span className="text-brand-cyan font-mono text-sm ">
+              {projectType}
+            </span>
+            <p className="text-slate-100 text-xl font-semibold mt-1">
+              {title}
+              
             </p>
+          </div>
+          <div className="bg-[#111928bf]  backdrop-blur-lg backdrop-saturate-150 p-4 rounded-md flex ">
+            <p className="text-slate-300 leading-relaxed text-start">{description}</p>
           </div>
           <a
             href={detailsLink}
@@ -62,6 +51,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             View Details
           </a>
         </div>
+      </div>
+      {/* Image Section */}
+      <div
+        className={`
+        w-full lg:w-1/2 relative z-10
+        ${
+          isImageLeft
+            ? "lg:border-t-8 lg:border-r-8 border-[#2a0d3d]"
+            : "lg:border-t-8 lg:border-l-8 border-[#2a0d3d]"
+        }
+      `}
+      >
+        <Image
+          src={imageUrl}
+          alt={imageAlt}
+          width={400}
+          height={300}
+          className="w-full h-64 lg:h-80 object-cover"
+          priority={false}
+        />
       </div>
     </div>
   );

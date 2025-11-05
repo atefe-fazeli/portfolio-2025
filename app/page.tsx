@@ -1,5 +1,6 @@
 import { ThemeToggle } from "@/components/themeToggle";
 import { Button } from "@/components/ui/button";
+import ProjectCard from "@/components/ui/customCard";
 import { Subtitle } from "@/components/ui/subTitle";
 import { Text } from "@/components/ui/text";
 import { Title } from "@/components/ui/title";
@@ -31,6 +32,24 @@ export default function Home() {
           performance optimization.
         </Text>
       </div>
+       <div className="container mx-auto px-4 py-8">
+      <ProjectCard
+        title="Example Project"
+        description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track."
+        imageUrl="/images/project1.jpg"
+        projectType="Featured Project"
+        imagePosition="right"
+        detailsLink="/projects/example-1"
+      />
+      <ProjectCard
+        title="Another Project"
+        description="Another amazing project description with detailed information about the features and technologies used."
+        imageUrl="/images/project2.jpg"
+        projectType="Example Project"
+        imagePosition="left"
+        detailsLink="/projects/example-2"
+      />
+    </div>
     </div>
   );
 }
