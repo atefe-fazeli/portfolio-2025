@@ -37,8 +37,6 @@ export const Title = ({
     alignments[align],
     className
   );
-
-  // ✅ کامپوننت‌های جداگانه برای هر variant
   switch (variant) {
     case 'h1':
       return <h1 className={classes} {...props}>{children}</h1>;

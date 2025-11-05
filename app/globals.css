@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @layer base {
   :root {
     --brand-pink: #dc00d3;
@@ -7,6 +8,14 @@
     --brand-navy: #010042;
     --brand-light: #f8f8f8;
     --brand-light-2: #fafafa;
+  }
+
+  .font-brand1 {
+    font-family: var(--font-brand1), sans-serif;
+  }
+  
+  .font-brand2 {
+    font-family: var(--font-brand2), sans-serif;
   }
 
   @theme inline {
