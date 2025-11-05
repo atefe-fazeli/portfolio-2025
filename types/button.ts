@@ -1,3 +1,5 @@
+import { BaseComponentProps } from "./baseTypes";
+
 export type ButtonVariant = 
   | 'primary'
   | 'secondary'
@@ -6,12 +8,6 @@ export type ButtonVariant =
   | 'danger';
 
 export type ButtonSize = 'sm' | 'md' | 'lg';
-
-export interface BaseComponentProps {
-  className?: string;
-  children: React.ReactNode;
-  disabled?: boolean;
-}
 
 export interface ButtonProps extends BaseComponentProps {
   variant?: ButtonVariant;
