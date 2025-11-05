@@ -20,7 +20,6 @@ export const Button = ({
     items-center 
     justify-center 
     font-medium 
-    font-brand2
     rounded-full
     transition-all 
     duration-300
