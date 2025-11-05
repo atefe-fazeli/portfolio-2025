@@ -31,19 +31,24 @@ export const Title = ({
     right: 'text-right'
   };
 
-  const Tag = variant as keyof JSX.IntrinsicElements;
-
-  return (
-    <Tag
-      className={cn(
-        baseStyles,
-        variants[variant],
-        alignments[align],
-        className
-      )}
-      {...props}
-    >
-      {children}
-    </Tag>
+  const classes = cn(
+    baseStyles,
+    variants[variant],
+    alignments[align],
+    className
   );
+
+  // ✅ کامپوننت‌های جداگانه برای هر variant
+  switch (variant) {
+    case 'h1':
+      return <h1 className={classes} {...props}>{children}</h1>;
+    case 'h2':
+      return <h2 className={classes} {...props}>{children}</h2>;
+    case 'h3':
+      return <h3 className={classes} {...props}>{children}</h3>;
+    case 'h4':
+      return <h4 className={classes} {...props}>{children}</h4>;
+    default:
+      return <h1 className={classes} {...props}>{children}</h1>;
+  }
 };
