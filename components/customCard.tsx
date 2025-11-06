@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ProjectCardProps } from "@/types/customCard";
-import CustomLink from "./link";
+import CustomLink from "./ui/link";
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
