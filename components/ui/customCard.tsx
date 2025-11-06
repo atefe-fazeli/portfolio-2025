@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ProjectCardProps } from "@/types/customCard";
-
+import CustomLink from "./link";
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
@@ -36,20 +36,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <span className="text-brand-cyan font-mono text-sm ">
               {projectType}
             </span>
-            <p className="text-slate-100 text-xl font-semibold mt-1">
-              {title}
-              
-            </p>
+            <p className="text-slate-100 text-xl font-semibold mt-1">{title}</p>
           </div>
           <div className="bg-[#111928bf]  backdrop-blur-lg backdrop-saturate-150 p-4 rounded-md flex ">
-            <p className="text-slate-300 leading-relaxed text-start">{description}</p>
+            <p className="text-slate-300 leading-relaxed text-start">
+              {description}
+            </p>
           </div>
-          <a
-            href={detailsLink}
-            className="inline-flex items-center px-4 py-2 border border-green-400 text-green-400 rounded font-mono text-sm hover:bg-green-400/10 transition-colors"
-          >
-            View Details
-          </a>
+          <CustomLink href="#" variant="button">
+            more detail
+          </CustomLink>
         </div>
       </div>
       {/* Image Section */}

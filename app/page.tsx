@@ -50,6 +50,7 @@ export default function Home() {
         detailsLink="/projects/example-2"
       />
     </div>
+   
     </div>
   );
 }
