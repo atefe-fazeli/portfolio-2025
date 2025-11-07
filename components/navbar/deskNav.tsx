@@ -7,6 +7,7 @@ interface DesktopNavProps {
 }
 
 const DesktopNav: React.FC<DesktopNavProps> = ({ navItems }) => {
+
   const leftNavItems = navItems.slice(0, 2);
   const rightNavItems = navItems.slice(2); 
 
@@ -19,7 +20,6 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ navItems }) => {
               <Link
                 key={item.id}
                 href={item.href}
-                scroll={false}
                 className="text-white hover:text-green-400 transition-colors duration-300 font-medium"
               >
                 {item.label}
@@ -38,7 +38,6 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ navItems }) => {
               <Link
                 key={item.id}
                 href={item.href}
-                scroll={false}
                 className="text-white hover:text-green-400 transition-colors duration-300 font-medium"
               >
                 {item.label}

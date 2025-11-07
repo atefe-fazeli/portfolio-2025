@@ -72,7 +72,6 @@ const MobileNav: React.FC<MobileNavProps> = ({ navItems }) => {
             <Link
               key={item.id}
               href={item.href}
-              scroll={false}
               className="text-2xl text-white hover:text-green-400 transition-colors duration-300 py-4 px-8 w-full text-center"
               onClick={handleLinkClick}
             >
