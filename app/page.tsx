@@ -59,7 +59,7 @@ export default function Home() {
        
         <section
           id="home"
-          className="min-h-screen pt-20 flex items-center justify-center"
+          className="min-h-screen pt-20 flex items-center justify-center bg-[linear-gradient(90deg,#312640_0%,#312640_18%,#712281_52%,#712281_68%,#5a5788_100%)] "
         >
           <div className="container mx-auto px-6">
             <h1 className="text-4xl font-bold text-center">بخش خانه</h1>
