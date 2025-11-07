@@ -9,7 +9,7 @@ import { navItems } from "@/data/menu";
 
 export default function Home() {
   return (
-    <div>
+    <div className="mt-14 p-9">
       <h1 className="text-rose-300 text-9xl">hello </h1>
       <ThemeToggle />
       <div className="flex gap-5 p-4">
@@ -53,39 +53,56 @@ export default function Home() {
         />
       </div>
 
+      <div className="bg-slate-950 text-white">
+        <Navigation navItems={navItems} />
 
-       <div className="bg-slate-950 text-white">
-      <Navigation navItems={navItems} />
-      
-      {/* بخش‌های مختلف صفحه */}
-      <section id="home" className="min-h-screen pt-20 flex items-center justify-center">
-        <div className="container mx-auto px-6">
-          <h1 className="text-4xl font-bold text-center">بخش خانه</h1>
-          <p className="text-center mt-4 text-slate-300">این بخش خانه است</p>
-        </div>
-      </section>
-      
-      <section id="about" className="min-h-screen pt-20 flex items-center justify-center bg-slate-900">
-        <div className="container mx-auto px-6">
-          <h1 className="text-4xl font-bold text-center">بخش درباره</h1>
-          <p className="text-center mt-4 text-slate-300">این بخش درباره ما است</p>
-        </div>
-      </section>
-      
-      <section id="projects" className="min-h-screen pt-20 flex items-center justify-center">
-        <div className="container mx-auto px-6">
-          <h1 className="text-4xl font-bold text-center">بخش پروژه‌ها</h1>
-          <p className="text-center mt-4 text-slate-300">این بخش پروژه‌ها است</p>
-        </div>
-      </section>
-      
-      <section id="contact" className="min-h-screen pt-20 flex items-center justify-center bg-slate-900">
-        <div className="container mx-auto px-6">
-          <h1 className="text-4xl font-bold text-center">بخش ارتباط</h1>
-          <p className="text-center mt-4 text-slate-300">این بخش ارتباط با ما است</p>
-        </div>
-      </section>
-    </div>
+       
+        <section
+          id="home"
+          className="min-h-screen pt-20 flex items-center justify-center"
+        >
+          <div className="container mx-auto px-6">
+            <h1 className="text-4xl font-bold text-center">بخش خانه</h1>
+            <p className="text-center mt-4 text-slate-300">این بخش خانه است</p>
+          </div>
+        </section>
+
+        <section
+          id="about"
+          className="min-h-screen pt-20 flex items-center justify-center bg-slate-900"
+        >
+          <div className="container mx-auto px-6">
+            <h1 className="text-4xl font-bold text-center">بخش درباره</h1>
+            <p className="text-center mt-4 text-slate-300">
+              این بخش درباره ما است
+            </p>
+          </div>
+        </section>
+
+        <section
+          id="projects"
+          className="min-h-screen pt-20 flex items-center justify-center"
+        >
+          <div className="container mx-auto px-6">
+            <h1 className="text-4xl font-bold text-center">بخش پروژه‌ها</h1>
+            <p className="text-center mt-4 text-slate-300">
+              این بخش پروژه‌ها است
+            </p>
+          </div>
+        </section>
+
+        <section
+          id="contact"
+          className="min-h-screen pt-20 flex items-center justify-center bg-slate-900"
+        >
+          <div className="container mx-auto px-6">
+            <h1 className="text-4xl font-bold text-center">بخش ارتباط</h1>
+            <p className="text-center mt-4 text-slate-300">
+              این بخش ارتباط با ما است
+            </p>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
