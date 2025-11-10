@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`${josefinSans.variable} ${inter.variable}`}>
-      <body className="font-brand2 ">
+      <body className="font-brand2 bg-gray-800 ">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>

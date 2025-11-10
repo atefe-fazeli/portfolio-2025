@@ -5,21 +5,28 @@ import { Text } from "./ui/text";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="">
-      <div className="flex flex-col md:flex-row">
-        <div className="bg-rose-400">
+    <section
+      id="home"
+      className="bg-[linear-gradient(90deg,#312640_0%,#312640_18%,#712281_52%,#712281_68%,#5a5788_100%)]  p-20"
+    >
+      <div className="flex flex-col  md:flex-row-reverse">
+        <div className=" w-full md:w-1/2 flex justify-end">
           <Image
             alt=""
-            src="/public/images/css-3.png"
-            width={300}
-            height={200}
-            className="object-cover"
+            src="/images/person.png"
+            width={400}
+            height={300}
+            className="object-cover "
           ></Image>
         </div>
-        <div className="flex flex-col gap-4">
-          <Title variant="h1">Hi, I`m Atefe</Title>
-          <Subtitle>Front-End Developer</Subtitle>
-          <Text>
+        <div className="w-full md:w-1/2 flex flex-col mt-4 md:mt-0 md:justify-center">
+          <Title variant="h1">Hi, I'm Atefe</Title>
+          <Subtitle>
+            <span className="bg-gradient-to-r from-brand-cyan to-brand-pink bg-clip-text text-transparent">
+              Front-End Developer
+            </span>
+          </Subtitle>
+          <Text className="mt-9 md:mt-12">
             Frontend developer with 3+ years of experience specializing in
             modern web technologies. Passionate about creating responsive,
             user-friendly interfaces and seamless user experiences. Currently
