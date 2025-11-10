@@ -4,7 +4,7 @@ import { Title } from "./ui/title";
 const AboutSection = () => {
   return (
     <section id="about" className="flex justify-center mt-20">
-      <div className="flex flex-col justify-center items-center gap-3 w-3/4">
+      <div className="flex flex-col justify-center items-center gap-6 w-3/4">
         <Title className="">
           <span className="bg-gradient-to-r from-brand-cyan to-brand-pink bg-clip-text text-transparent">
             about
@@ -23,6 +23,9 @@ const AboutSection = () => {
           transforming complex requirements into intuitive, performant user
           interfaces that deliver exceptional user experiences.
         </Text>
+        <div className="flex flex-wrap w-1/4 bg-amber-300">
+        
+        </div>
       </div>
     </section>
   );
