@@ -12,8 +12,8 @@ export const Text = ({
   ...props
 }: TextProps) => {
   const baseStyles = `
-    text-gray-600 
-    dark:text-gray-400
+    text-gray-100 
+    dark:text-gray-200
     leading-relaxed
     transition-colors 
     duration-200
