@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="bg-[linear-gradient(90deg,#312640_0%,#312640_18%,#712281_52%,#712281_68%,#5a5788_100%)]  p-14 md:p-20"
+      className="bg-[linear-gradient(90deg,#312640_0%,#312640_18%,#712281_52%,#712281_68%,#5a5788_100%)]  p-14 md:p-20 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.5)]"
     >
       <div className="flex flex-col  md:flex-row-reverse">
         <div className=" w-full md:w-1/2 flex justify-end">
@@ -20,7 +20,7 @@ const HeroSection = () => {
           ></Image>
         </div>
         <div className="w-full md:w-1/2 flex flex-col mt-4 md:mt-0 md:justify-center">
-          <Title variant="h1">Hi, I'm Atefe</Title>
+          <Title variant="h1">Hi, I&apos;m Atefe</Title>
           <Subtitle>
             <span className="bg-gradient-to-r from-brand-cyan to-brand-pink bg-clip-text text-transparent">
               Front-End Developer

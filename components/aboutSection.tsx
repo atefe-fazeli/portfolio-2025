@@ -16,7 +16,7 @@ const AboutSection = () => {
           A passionate frontend developer with over 3 years of hands-on
           experience in modern web technologies. My expertise centers around
           React and Next.js, complemented by strong skills in TypeScript and
-          JavaScript. I've successfully delivered numerous freelance projects
+          JavaScript. I&apos;ve successfully delivered numerous freelance projects
           while also gaining valuable experience in an on-site company
           environment. My technical stack includes: • React & Next.js for robust
           frontend architecture • TypeScript for type-safe, scalable code •
