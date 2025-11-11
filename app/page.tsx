@@ -5,7 +5,7 @@ import { Subtitle } from "@/components/ui/subTitle";
 import { Text } from "@/components/ui/text";
 import { Title } from "@/components/ui/title";
 import Navigation from "@/components/navbar";
-import { navItems } from "@/data/menu";
+import { navItems } from "@/data/listDtats";
 import HeroSection from "@/components/heroSection";
 import AboutSection from "@/components/aboutSection";
 

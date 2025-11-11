@@ -1,9 +1,6 @@
-export interface SkillsItem {
-  id: string;
+export interface SkillItem {
+  id: number;
   imageUrl: string;
 
 }
 
-export interface SkillsData {
-  projects: SkillsItem[];
-}
