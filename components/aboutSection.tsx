@@ -30,15 +30,15 @@ const AboutSection = () => {
             <div
               key={item.id}
               className="flex items-center justify-center rounded-full 
-      bg-gray-700/20          
-      backdrop-blur-lg        
-      border border-white/10   
-      shadow-lg                
-      hover:bg-gray-700/30   
-      hover:backdrop-blur-xl   
-      hover:border-white/20  
-      transition-all duration-300
-      w-12 h-12"
+             bg-gray-700/20          
+             backdrop-blur-lg        
+             border border-white/10   
+             shadow-lg                
+             hover:bg-gray-700/30   
+             hover:backdrop-blur-xl   
+             hover:border-white/20  
+            transition-all duration-300
+             w-12 h-12"
             >
               <Image
                 alt=""
