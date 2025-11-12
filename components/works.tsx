@@ -12,7 +12,7 @@ const WorkSection = () => {
         </span>
       </Title>
       <Text align="center">A collection of projects I&apos;ve worked on </Text>
-      <div className="space-y-20 mt-20 md:mt-40">
+      <div className="space-y-20  md:space-y-40 mt-10 md:mt-20">
         {projectsList.map((project) => (
           <ProjectCard
             key={project.id}

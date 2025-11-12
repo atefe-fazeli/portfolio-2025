@@ -10,7 +10,7 @@ const HeroSection = () => {
       className="bg-[linear-gradient(90deg,#312640_0%,#312640_18%,#712281_52%,#712281_68%,#5a5788_100%)]  p-14 md:p-20 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.5)]"
     >
       <div className="flex flex-col  md:flex-row-reverse">
-        <div className=" w-full md:w-1/2 flex justify-end">
+        <div className=" w-full md:w-1/2 flex justify-center md:justify-end">
           <Image
             alt=""
             src="/images/person.png"

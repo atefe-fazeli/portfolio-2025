@@ -16,29 +16,29 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div
       className={`
-      flex flex-col  lg:flex-row items-center  relative
-      ${isImageLeft ? "lg:flex-row-reverse" : ""}
+      flex flex-col  md:flex-row items-center  relative
+      ${isImageLeft ? "md:flex-row-reverse" : ""}
     `}
     >
       {/* Content Section */}
       <div
         className={`
-        w-full lg:w-1/2 relative z-20 mt-6 lg:mt-0
-        ${isImageLeft ? "lg:-ml-5 text-left" : "lg:-mr-5 text-right"}
+        w-full md:w-1/2 relative z-20 mt-6 md:mt-0
+        ${isImageLeft ? "md:-ml-6 lg:-ml-12 text-left" : "md:-mr-6 lg:-mr-12 text-right"}
       `}
       >
         <div
-          className={`h-64 lg:h-80 flex flex-col justify-between ${
-            isImageLeft ? "items-end" : "items-start"
+          className={`h-54 md:h-80 flex flex-col justify-between mb-5 md:mb-0 ${
+            isImageLeft ? "items-center md:items-end" : "items-center md:items-start"
           }`}
         >
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-center">
             <span className="text-brand-cyan font-mono text-sm ">
               {projectType}
             </span>
             <p className="text-slate-100 text-xl font-semibold mt-1">{title}</p>
           </div>
-          <div className="bg-[#111928bf]  backdrop-blur-lg backdrop-saturate-150 p-4 rounded-md flex ">
+          <div className="bg-[#111928bf] backdrop-blur-lg  p-4 rounded-lg flex w-full">
             <p className="text-slate-300 leading-relaxed text-start">
               {description}
             </p>
@@ -51,20 +51,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* Image Section */}
       <div
         className={`
-        w-full lg:w-1/2 relative z-10
+       hidden md:block w-full md:w-1/2 h-54 md:h-80 relative z-10
         ${
           isImageLeft
-            ? "lg:border-t-8 lg:border-r-8 border-[#2a0d3d]"
-            : "lg:border-t-8 lg:border-l-8 border-[#2a0d3d]"
+            ? "md:border-t-12 md:border-r-12 border-[#2a0d3d] rounded-lg"
+            : "md:border-t-12 md:border-l-12 border-[#2a0d3d] rounded-lg"
         }
       `}
       >
         <Image
           src={imageUrl}
           alt={imageAlt}
-          width={400}
-          height={300}
-          className="w-full h-64 lg:h-80 object-cover"
+          width={550}
+          height={400}
+          className="w-full h-full rounded-lg"
           priority={false}
         />
       </div>
