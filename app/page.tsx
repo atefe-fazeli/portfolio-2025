@@ -8,6 +8,7 @@ import Navigation from "@/components/navbar";
 import { navItems } from "@/data/listDtats";
 import HeroSection from "@/components/heroSection";
 import AboutSection from "@/components/aboutSection";
+import WorkSection from "@/components/works";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Navigation navItems={navItems} />
       <HeroSection />
       <AboutSection />
+      <WorkSection />
     </div>
   );
 }
