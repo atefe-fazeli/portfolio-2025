@@ -39,11 +39,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <p className="text-slate-100 text-xl font-semibold mt-1">{title}</p>
           </div>
           <div className="bg-[#111928bf] backdrop-blur-lg  p-4 rounded-lg flex w-full">
-            <p className="text-slate-300 leading-relaxed text-start">
+            <p className="text-slate-300 leading-relaxed text-start line-clamp-4">
               {description}
             </p>
           </div>
-          <CustomLink href="#" variant="button">
+          <CustomLink href="#" variant="button" className="mt-3 md:mt-0">
             more detail
           </CustomLink>
         </div>

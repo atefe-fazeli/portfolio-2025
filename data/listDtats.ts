@@ -71,7 +71,7 @@ export const projectsList: ProjectItem[] = [
   },
     {
     id: 3,
-    title: "Pol Star Educational Admin Panel",
+    title: "Pol Star Admin Panel",
     description: "Engineered the frontend architecture using Next.js and TypeScript for a comprehensive educational management system. Developed features for course creation and management, virtual class video uploads, and complete educational content administration. Built responsive interfaces for organizing training programs, managing multimedia resources, and handling all institutional educational operations through an intuitive admin dashboard.",
     imageUrl: "/images/polstar.png",
     year: "2023",
