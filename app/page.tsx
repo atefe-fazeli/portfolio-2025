@@ -15,8 +15,10 @@ export default function Home() {
     <div className="mt-14 px-4">
       <Navigation navItems={navItems} />
       <HeroSection />
-      <AboutSection />
-      <WorkSection />
+      <div className="flex flex-col gap-y-20 md:gap-y-40 mt-10 md:mt-20 p-10 md:p-20">
+        <AboutSection />
+        <WorkSection />
+      </div>
     </div>
   );
 }

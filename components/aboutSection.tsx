@@ -34,7 +34,7 @@ const AboutSection = () => {
     <section
       ref={ref}
       id="about"
-      className="flex justify-center mt-20 p-14 md:p-20"
+      className="flex justify-center "
     >
       <motion.div
         className="flex flex-col justify-center items-center gap-6"

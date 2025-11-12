@@ -6,4 +6,7 @@ export interface ProjectCardProps {
   imagePosition: 'left' | 'right';
   detailsLink: string;
   imageAlt?: string;
+  year?: string;
+  role?: string;
+  technologies?: string[];
 }
