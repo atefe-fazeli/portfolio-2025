@@ -13,6 +13,7 @@ import WorkSection from "@/components/works";
 export default function Home() {
   return (
     <div className="mt-14 px-4">
+      <div className="bg-gray-800 h-6 hidden md:block fixed top-0 left-0 right-0 z-40"></div>
       <Navigation navItems={navItems} />
       <HeroSection />
       <div className="flex flex-col gap-y-20 md:gap-y-40 mt-10 md:mt-20 p-10 md:p-20">

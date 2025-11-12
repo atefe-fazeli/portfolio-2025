@@ -49,19 +49,19 @@ export const SkillsList: SkillItem[] = [
 export const projectsList: ProjectItem[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Developed a full-stack e-commerce platform with React, Next.js, and Node.js.",
+    title: "Digix24 Platform",
+    description: "Digix24 Cryptocurrency Exchange - Contributed as a Frontend Developer on a comprehensive cryptocurrency trading platform with 5+ years of market presence. Developed the main website and admin panel during a 3-month remote contract, implementing secure trading interfaces for Bitcoin, Tether, and various digital assets with real-time rate displays and transaction functionalities.",
     imageUrl: "/images/digix1.png",
     year: "2023",
     role: "Frontend Developer",
     projectType: "Featured Project", 
     detailsLink: "/projects/ecommerce", 
-    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+    technologies: ["React", "Next.js", "JavaScript", "Tailwind CSS"]
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "Built a collaborative task management application with real-time updates.",
+    title: "Mehr Soheila Charity Health Management Platform",
+    description: "Mehr Soheila Charity Platform - As Frontend Developer, built an internal healthcare management system using React and TypeScript to track beneficiary medical histories and screening processes. Implemented user interfaces for recording all patient interactions - from registration and intake to health controls, tests, and examinations. Worked collaboratively with backend team to integrate API endpoints and ensure proper data synchronization across the charity's operational workflow.",
     imageUrl: "/images/mehr5.png",
     year: "2023",
     role: "Full Stack Developer",
@@ -71,8 +71,8 @@ export const projectsList: ProjectItem[] = [
   },
     {
     id: 3,
-    title: "Task Management App",
-    description: "Built a collaborative task management application with real-time updates.",
+    title: "Pol Star Educational Admin Panel",
+    description: "Engineered the frontend architecture using Next.js and TypeScript for a comprehensive educational management system. Developed features for course creation and management, virtual class video uploads, and complete educational content administration. Built responsive interfaces for organizing training programs, managing multimedia resources, and handling all institutional educational operations through an intuitive admin dashboard.",
     imageUrl: "/images/polstar.png",
     year: "2023",
     role: "Full Stack Developer",
