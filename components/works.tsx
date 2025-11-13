@@ -81,6 +81,7 @@ const WorkSection = () => {
               transition={{ delay: index * 0.2 }}
             >
               <ProjectCard
+              id={project.id}
                 title={project.title}
                 description={project.description}
                 imageUrl={project.imageUrl}

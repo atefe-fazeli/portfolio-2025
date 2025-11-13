@@ -13,7 +13,7 @@ interface ImageGalleryProps {
 
 const ImageGallery = ({ images }: ImageGalleryProps) => {
   return (
-    <div className="rounded-xl overflow-hidden shadow-lg">
+    <div className="rounded-lg overflow-hidden shadow-lg">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={0}

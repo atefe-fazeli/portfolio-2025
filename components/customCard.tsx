@@ -3,6 +3,7 @@ import { ProjectCardProps } from "@/types/customCard";
 import CustomLink from "./ui/link";
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
+  id,
   title,
   description,
   imageUrl,
@@ -12,7 +13,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   imageAlt = title,
 }) => {
   const isImageLeft = imagePosition === "left";
-
+const projectDetailLink = `/projects/${id}`;
+console.log('Project Detail Link:', projectDetailLink);
   return (
     <div
       className={`
@@ -43,7 +45,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               {description}
             </p>
           </div>
-          <CustomLink href="#" variant="button" className="mt-3 md:mt-0">
+          <CustomLink href={projectDetailLink} variant="button" className="mt-3 md:mt-0">
             more detail
           </CustomLink>
         </div>
