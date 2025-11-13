@@ -9,6 +9,7 @@ import { navItems } from "@/data/listDtats";
 import HeroSection from "@/components/heroSection";
 import AboutSection from "@/components/aboutSection";
 import WorkSection from "@/components/works";
+import ContactSection from "@/components/contact";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <div className="flex flex-col gap-y-20 md:gap-y-40 mt-10 md:mt-20 p-8 md:p-20">
         <AboutSection />
         <WorkSection />
+        <ContactSection />
       </div>
     </div>
   );

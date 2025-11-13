@@ -2,8 +2,8 @@ import { NavItem } from '@/types/nav';
 import { SkillItem} from '@/types/skills';
 import { ProjectItem } from '@/types/works'; 
 import { ContactItem } from '@/types/contact';
-import { FaWhatsapp, FaTelegram, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
-import { SiGmail } from 'react-icons/si';
+import { FaTelegram, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export const navItems: NavItem[] = [
   { id: 'home', label: 'HOME', href: '#home' },
@@ -91,36 +91,36 @@ export const contactList: ContactItem[] = [
   {
     id: 1,
     title: 'WhatsApp',
-    icon: FaWhatsapp,
+    icon: IoLogoWhatsapp,
     url: 'https://wa.me/989307651749', 
-    color: 'text-green-500 hover:bg-green-500'
+    color: 'text-indigo-950 '
   },
   {
     id: 2,
     title: 'Telegram',
     icon: FaTelegram,
     url: 'https://t.me/fefeFazeli', 
-    color: 'text-blue-400 hover:bg-blue-400'
+    color: 'text-indigo-950 '
   },
   {
     id: 3,
     title: 'Email',
     icon: FaEnvelope,
     url: 'mailto:your.atefefazeli1996@gmail.com', 
-    color: 'text-red-500 hover:bg-red-500'
+    color: 'text-indigo-950 '
   },
   {
     id: 4,
     title: 'LinkedIn',
     icon: FaLinkedin,
     url: 'https://linkedin.com/in/AtefeFazeli', 
-    color: 'text-blue-600 hover:bg-blue-600'
+    color: 'text-indigo-950 '
   },
   {
     id: 5,
     title: 'Phone',
     icon: FaPhone,
     url: 'tel:+989307651749', 
-    color: 'text-gray-600 hover:bg-gray-600'
+    color: 'text-indigo-950 '
   }
 ];
