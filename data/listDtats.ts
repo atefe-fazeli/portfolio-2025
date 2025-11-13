@@ -55,6 +55,7 @@ export const projectsList: ProjectItem[] = [
     title: "Digix24 Platform",
     description: "Digix24 Cryptocurrency Exchange - Contributed as a Frontend Developer on a comprehensive cryptocurrency trading platform with 5+ years of market presence. Developed the main website and admin panel during a 3-month remote contract, implementing secure trading interfaces for Bitcoin, Tether, and various digital assets with real-time rate displays and transaction functionalities.",
     imageUrl: "/images/digix1.png",
+    images: [],
     year: "2023",
     role: "Frontend Developer",
     projectType: "Featured Project", 

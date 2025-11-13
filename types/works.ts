@@ -3,6 +3,7 @@ export interface ProjectItem {
   title: string;
   description: string;
   imageUrl: string;
+  images?: string[]; 
   year: string;
   role: string;
   technologies?: string[];
