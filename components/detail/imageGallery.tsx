@@ -13,7 +13,7 @@ interface ImageGalleryProps {
 
 const ImageGallery = ({ images }: ImageGalleryProps) => {
   return (
-    <div className="rounded-lg overflow-hidden shadow-lg">
+    <div className="rounded-2xl overflow-hidden shadow-2xl">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={0}
@@ -32,12 +32,18 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-full">
+            <div className="relative w-full h-full bg-gray-900/30 backdrop-blur-xl rounded-2xl p-4">
+              {/* Background gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-800/40 via-gray-900/30 to-brand-cyan/10 rounded-2xl"></div>
+              
+              {/* Border glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-brand-cyan/15 to-brand-pink/15 rounded-2xl blur-md opacity-50"></div>
+              
               <Image
                 src={image}
                 alt={`Project image ${index + 1}`}
                 fill
-                className="object-cover"
+                className="object-contain rounded-lg relative z-10"
                 priority={index === 0}
                 sizes="(max-width: 768px) 100vw, 50vw"
               />

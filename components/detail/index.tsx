@@ -13,7 +13,7 @@ interface ProjectDetailsProps {
 const ProjectDetails = ({ project }: ProjectDetailsProps) => {
   return (
     <div className="flex flex-col  gap-5 md:gap-8  p-8 md:p-20">
-      <section className=" flex justify-center items-center">
+      <section className=" w-2/3 mx-auto">
         <ImageGallery images={project.images || [project.imageUrl]} />
       </section>
 

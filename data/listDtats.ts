@@ -73,11 +73,9 @@ export const projectsList: ProjectItem[] = [
     description: "Mehr Soheila Charity Platform - As Frontend Developer, built an internal healthcare management system using React and TypeScript to track beneficiary medical histories and screening processes. Implemented user interfaces for recording all patient interactions - from registration and intake to health controls, tests, and examinations. Worked collaboratively with backend team to integrate API endpoints and ensure proper data synchronization across the charity's operational workflow.",
     imageUrl: "/images/mehr5.png",
     images: [
-      "/images/mehr1.png",
-      "/images/mehr2.png",
-      "/images/mehr3.png",
-      "/images/mehr4.png",
-      "/images/mehr5.png"
+      "/images/mehr2.PNG",
+      "/images/mehr4.PNG",
+      "/images/mehr5.PNG",
     ],
     year: "2023",
     role: "Full Stack Developer",
