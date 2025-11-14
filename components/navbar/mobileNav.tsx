@@ -23,9 +23,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ navItems }) => {
           <div className="flex items-center justify-between">
 
             <Link href="#home" scroll={false} onClick={handleLinkClick}>
-              <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-blue-500 transform -skew-x-12 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm skew-x-12">LO</span>
-              </div>
+             
             </Link>
 
 

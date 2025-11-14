@@ -4,6 +4,7 @@ import { ProjectItem } from '@/types/works';
 import { ContactItem } from '@/types/contact';
 import { FaTelegram, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 import { IoLogoWhatsapp } from "react-icons/io";
+import { FaGithub } from "react-icons/fa6";
 
 export const navItems: NavItem[] = [
   { id: 'home', label: 'HOME', href: '#home' },
@@ -59,11 +60,11 @@ export const projectsList: ProjectItem[] = [
       "/images/digix1.PNG",
       "/images/digix2.PNG",
       "/images/digix3.PNG",
-      "/images/digix4.png"
+    
     ],
     year: "2023",
     role: "Frontend Developer",
-    projectType: "Featured Project", 
+    projectType: "Project 1", 
     detailsLink: "/projects/digix24", 
     technologies: ["React", "Next.js", "JavaScript", "Tailwind CSS"]
   },
@@ -79,7 +80,7 @@ export const projectsList: ProjectItem[] = [
     ],
     year: "2024",
     role: "Frontend Developer",
-    projectType: "Example Project", 
+    projectType: "Project 2", 
     detailsLink: "/projects/mehr-soheila", 
     technologies: ["React", "TypeScript", "MongoDB", "Tailwind CSS"]
   },
@@ -96,7 +97,7 @@ export const projectsList: ProjectItem[] = [
     ],
     year: "2025",
     role: "Frontend Developer",
-    projectType: "Example Project", 
+    projectType: "Project 3", 
     detailsLink: "/projects/pol-star", 
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Redux"]
   },
@@ -114,7 +115,7 @@ export const projectsList: ProjectItem[] = [
     ],
     year: "2024",
     role: "Frontend Developer",
-    projectType: "Example Project", 
+    projectType: "Project 4", 
     detailsLink: "/projects/pol-star", 
     technologies: ["react js", "Javascript", "Tailwind CSS", "Redux"]
   },
@@ -158,6 +159,13 @@ export const contactList: ContactItem[] = [
     title: 'Phone',
     icon: FaPhone,
     url: 'tel:+989307651749', 
+    color: 'text-indigo-950 '
+  }
+  ,  {
+    id: 6,
+    title: 'Github',
+    icon: FaGithub,
+    url: 'https://github.com/atefe-fazeli', 
     color: 'text-indigo-950 '
   }
 ];

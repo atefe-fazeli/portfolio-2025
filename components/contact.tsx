@@ -107,7 +107,8 @@ const ContactSection = () => {
                   bg-gradient-to-r from-brand-cyan to-brand-pink shadow-lg 
                   hover:shadow-2xl 
                   transition-all duration-300 
-                  w-32 h-32
+                  w-20 h-20
+                  md:w-32 md:h-32
                   group
                   cursor-pointer
                   overflow-hidden
@@ -135,7 +136,7 @@ const ContactSection = () => {
                 >
                   <IconComponent
                     className={`
-                      text-3xl mb-3 
+                      text-3xl mb-2 md:mb-3 
                       transition-colors duration-300
                       ${contact.color.split(" ")[0]}
                     `}
@@ -143,7 +144,7 @@ const ContactSection = () => {
                 </motion.div>
 
                 <motion.span
-                  className="font-medium text-purple-950 transition-colors duration-300"
+                  className="text-sm md:text-lg md:font-medium text-purple-950 transition-colors duration-300"
                   initial={{ y: 10, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: index * 0.1 + 0.5 }}
