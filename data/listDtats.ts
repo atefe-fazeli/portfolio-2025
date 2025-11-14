@@ -77,11 +77,11 @@ export const projectsList: ProjectItem[] = [
       "/images/mehr4.PNG",
       "/images/mehr5.PNG",
     ],
-    year: "2023",
-    role: "Full Stack Developer",
+    year: "2024",
+    role: "Frontend Developer",
     projectType: "Example Project", 
     detailsLink: "/projects/mehr-soheila", 
-    technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Socket.io"]
+    technologies: ["React", "TypeScript", "MongoDB", "Tailwind CSS"]
   },
   {
     id: 3,
@@ -94,29 +94,29 @@ export const projectsList: ProjectItem[] = [
       "/images/polstar3.png",
       "/images/polstar4.png"
     ],
-    year: "2023",
-    role: "Full Stack Developer",
+    year: "2025",
+    role: "Frontend Developer",
     projectType: "Example Project", 
     detailsLink: "/projects/pol-star", 
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React Query"]
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Redux"]
   },
 
   {
     id: 4,
     title: "Educational Management Platform",
     description: "Developed the frontend for a comprehensive student-teacher panel using React, TypeScript, and Redux. Built student interfaces for accessing classes, viewing educational materials, and taking online exams. Created teacher dashboards for class management, exam creation, and educational content organization. Implemented robust state management to handle complex user workflows and ensure seamless user experience across both roles",
-    imageUrl: "/images/polstar.png",
+    imageUrl: "/images/exam1.png",
     images: [
-      "/images/polstar1.png",
-      "/images/polstar2.png",
-      "/images/polstar3.png",
-      "/images/polstar4.png"
+      "/images/exam1.png",
+      "/images/exam2.png",
+      "/images/exam3.png",
+      "/images/exam4.png"
     ],
-    year: "2023",
-    role: "Full Stack Developer",
+    year: "2024",
+    role: "Frontend Developer",
     projectType: "Example Project", 
     detailsLink: "/projects/pol-star", 
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React Query"]
+    technologies: ["react js", "Javascript", "Tailwind CSS", "Redux"]
   },
 
 
