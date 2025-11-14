@@ -100,6 +100,27 @@ export const projectsList: ProjectItem[] = [
     detailsLink: "/projects/pol-star", 
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React Query"]
   },
+
+  {
+    id: 4,
+    title: "Educational Management Platform",
+    description: "Developed the frontend for a comprehensive student-teacher panel using React, TypeScript, and Redux. Built student interfaces for accessing classes, viewing educational materials, and taking online exams. Created teacher dashboards for class management, exam creation, and educational content organization. Implemented robust state management to handle complex user workflows and ensure seamless user experience across both roles",
+    imageUrl: "/images/polstar.png",
+    images: [
+      "/images/polstar1.png",
+      "/images/polstar2.png",
+      "/images/polstar3.png",
+      "/images/polstar4.png"
+    ],
+    year: "2023",
+    role: "Full Stack Developer",
+    projectType: "Example Project", 
+    detailsLink: "/projects/pol-star", 
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React Query"]
+  },
+
+
+  
 ];
 
 
