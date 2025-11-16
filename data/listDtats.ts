@@ -90,10 +90,10 @@ export const projectsList: ProjectItem[] = [
     description: "Engineered the frontend architecture using Next.js and TypeScript for a comprehensive educational management system. Developed features for course creation and management, virtual class video uploads, and complete educational content administration. Built responsive interfaces for organizing training programs, managing multimedia resources, and handling all institutional educational operations through an intuitive admin dashboard.",
     imageUrl: "/images/polstar.png",
     images: [
-      "/images/polstar1.png",
-      "/images/polstar2.png",
-      "/images/polstar3.png",
-      "/images/polstar4.png"
+      "/images/pol1 (1).jpg",
+      "/images/pol1 (2).jpg",
+      "/images/pol1 (3).jpg",
+      "/images/pol1 (4).jpg"
     ],
     year: "2025",
     role: "Frontend Developer",
