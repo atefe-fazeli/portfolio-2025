@@ -5,6 +5,7 @@ import { Title } from "./ui/title";
 import ProjectCard from "./customCard";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import type { Variants } from 'framer-motion';
 
 const WorkSection = () => {
   const ref = useRef(null);
@@ -20,29 +21,29 @@ const WorkSection = () => {
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  };
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      duration: 0.5, 
+      ease: "easeOut" as const
+    } 
+  }
+};
 
-  const projectVariants = {
-    hidden: { opacity: 0, x: 50 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.7,
-        ease: "easeOut",
-      },
-    },
-  };
+const projectVariants: Variants = {
+  hidden: { opacity: 0, x: 100 },
+  visible: { 
+    opacity: 1, 
+    x: 0, 
+    transition: { 
+      duration: 0.6, 
+      ease: "easeOut" as const
+    } 
+  }
+};
 
   return (
     <section ref={ref} className="flex flex-col justify-center" id="projects">

@@ -29,12 +29,12 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
           </div>
 
           <div className="flex items-center gap-2">
-            <Text >Role :</Text>
+            <Text>Role :</Text>
             <Badge variant="primary">{project.role}</Badge>
           </div>
 
           <div className="flex items-center gap-2">
-            <Text >Type :</Text>
+            <Text>Type :</Text>
             <Badge variant="primary">{project.projectType}</Badge>
           </div>
         </div>
@@ -42,15 +42,15 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
         <div className="space-y-3">
           <Text className="">Technologies Used :</Text>
           <div className="flex flex-wrap gap-2">
-            {project.technologies.map((tech, index) => (
-              <Badge
-                key={index}
-                variant="warning"
-                className="transition-all hover:scale-105"
-              >
-                {tech}
-              </Badge>
-            ))}
+            {project.technologies && project.technologies.length > 0 ? (
+              project.technologies.map((tech, index) => (
+                <Badge key={index} variant="warning" className="text-xs">
+                  {tech}
+                </Badge>
+              ))
+            ) : (
+              <span className="text-gray-500">No technologies listed</span>
+            )}
           </div>
         </div>
       </section>

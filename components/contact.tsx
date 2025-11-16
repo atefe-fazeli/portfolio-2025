@@ -6,6 +6,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Title } from "./ui/title";
 import { Text } from "./ui/text";
+import { Variants } from 'framer-motion';
 
 const ContactSection = () => {
   const ref = useRef(null);
@@ -21,23 +22,25 @@ const ContactSection = () => {
     },
   };
 
-  const getItemVariants = (index: number) => ({
-    hidden: {
-      opacity: 0,
-      y: 50,
-      rotateY: index % 2 === 0 ? -30 : 30,
+const getItemVariants = (index: number): Variants => {
+  return {
+    hidden: { 
+      opacity: 0, 
+      y: 20, 
+      rotateY: -15 
     },
-    visible: {
-      opacity: 1,
-      y: 0,
-      rotateY: 0,
-      transition: {
-        duration: 0.7,
-        ease: "easeOut",
-        delay: index * 0.1,
-      },
-    },
-  });
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      rotateY: 0, 
+      transition: { 
+        duration: 0.6, 
+        ease: [0.25, 0.46, 0.45, 0.94],  
+        delay: index * 0.1 
+      } 
+    }
+  };
+};
 
   const handleContactClick = (contact: ContactItem) => {
     if (contact.title !== "Phone") {

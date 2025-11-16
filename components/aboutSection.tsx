@@ -3,7 +3,7 @@ import { SkillsList } from "@/data/listDtats";
 import { Text } from "./ui/text";
 import { Title } from "./ui/title";
 import Image from "next/image";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView,Variants } from "framer-motion";
 import { useRef } from "react";
 const AboutSection = () => {
   const ref = useRef(null);
@@ -18,17 +18,22 @@ const AboutSection = () => {
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  };
+
+
+const itemVariants: Variants = {
+  hidden: { 
+    opacity: 0, 
+    y: 20 
+  },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      duration: 0.5, 
+      ease: "easeOut" 
+    } 
+  }
+};
 
   return (
     <section
