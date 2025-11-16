@@ -1,12 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+ output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: true
-  },
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio-2025' : '', 
+  }
 };
 
 export default nextConfig;
