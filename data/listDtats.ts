@@ -55,7 +55,7 @@ export const projectsList: ProjectItem[] = [
     id: 1,
     title: "Digix24 Platform",
     description: "Digix24 Cryptocurrency Exchange - Contributed as a Frontend Developer on a comprehensive cryptocurrency trading platform with 5+ years of market presence. Developed the main website and admin panel during a 3-month remote contract, implementing secure trading interfaces for Bitcoin, Tether, and various digital assets with real-time rate displays and transaction functionalities.",
-    imageUrl: "/images/digix1.png",
+    imageUrl: "/images/digix1.PNG",
     images: [
       "/images/digix1.PNG",
       "/images/digix2.PNG",
@@ -72,11 +72,13 @@ export const projectsList: ProjectItem[] = [
     id: 2,
     title: "Mehr Soheila Charity Health Management Platform",
     description: "Mehr Soheila Charity Platform - As Frontend Developer, built an internal healthcare management system using React and TypeScript to track beneficiary medical histories and screening processes. Implemented user interfaces for recording all patient interactions - from registration and intake to health controls, tests, and examinations. Worked collaboratively with backend team to integrate API endpoints and ensure proper data synchronization across the charity's operational workflow.",
-    imageUrl: "/images/mehr5.png",
+    imageUrl: "/images/mehr5.PNG",
     images: [
       "/images/mehr2.PNG",
       "/images/mehr4.PNG",
       "/images/mehr5.PNG",
+       "/images/mehr6.PNG",
+        "/images/mehr7.PNG",
     ],
     year: "2024",
     role: "Frontend Developer",
@@ -88,7 +90,7 @@ export const projectsList: ProjectItem[] = [
     id: 3,
     title: "Pol Star Admin Panel",
     description: "Engineered the frontend architecture using Next.js and TypeScript for a comprehensive educational management system. Developed features for course creation and management, virtual class video uploads, and complete educational content administration. Built responsive interfaces for organizing training programs, managing multimedia resources, and handling all institutional educational operations through an intuitive admin dashboard.",
-    imageUrl: "/images/polstar.png",
+    imageUrl: "/images/polstar.PNG",
     images: [
       "/images/pol1 (1).jpg",
       "/images/pol1 (2).jpg",
@@ -106,12 +108,12 @@ export const projectsList: ProjectItem[] = [
     id: 4,
     title: "Educational Management Platform",
     description: "Developed the frontend for a comprehensive student-teacher panel using React, TypeScript, and Redux. Built student interfaces for accessing classes, viewing educational materials, and taking online exams. Created teacher dashboards for class management, exam creation, and educational content organization. Implemented robust state management to handle complex user workflows and ensure seamless user experience across both roles",
-    imageUrl: "/images/exam1.png",
+    imageUrl: "/images/exam1.PNG",
     images: [
-      "/images/exam1.png",
-      "/images/exam2.png",
-      "/images/exam3.png",
-      "/images/exam4.png"
+      "/images/exam1.PNG",
+      "/images/exam2.PNG",
+      "/images/exam3.PNG",
+      "/images/exam4.PNG"
     ],
     year: "2024",
     role: "Frontend Developer",
